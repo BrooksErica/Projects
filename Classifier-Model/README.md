@@ -62,15 +62,16 @@ Classification Report:
 | 1 | 0.99 | 0.93 | 0.96 | 486 |
 |                                          |
 | accuracy    |         |  0.98 | 1871 |
-| micro avg. | 0.98 | 0.96 | 0.97 | 1871 |
+| micro avg.  | 0.98 | 0.96 | 0.97 | 1871 |
 | weighted avg. | 0.98 | 0.98 | 0.98 | 1871 |
 
 
 
 
-Confusion Matrix:
- [[ 453   33]  
- [   4 1381]]
+| Confusion Matrix |
+| ---------------- |
+| [[ 453 |  33] | 
+| [   4 | 1381]] |
 
 <img width="292" alt="image" src="https://github.com/user-attachments/assets/0103a891-69af-44d5-8a0c-6210fee00f15" />
 
