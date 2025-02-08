@@ -9,21 +9,7 @@ In this case study, the goal is to classify firewall log files using a multiclas
 Method
 
 The data used is from a Firewall Device used at Firat University. System administrator’s set-up a set of security policies based on the organization’s needs. The sample data consists of a collection of 65532 firewall log files examined over 12 different features which include the target feature ‘Action.’  The Action feature is the column of classes that we are trying to predict.
-
-Feature	Description
-Source Port	Client Source Port
-Destination Port	Client Destination Port
-NAT Source Port	Network Address Translation Source Port
-NAT Destination Port	Network Address Translation Destination Port
-Bytes	Total Bytes
-Bytes Sent	Bytes Sent
-Bytes Received 	Bytes Received
-Packets	Total Packets
-Elapsed Time	Elapsed Time for flow
-pkts_sent	Packets Sent
-pkts_received	Packets Received
-Action	Class (allow, deny, drop, reset-both)
-Table 1: Features and Descriptions
+	
 
 Action	Description
 Allow	Allows the internet traffic.
@@ -37,10 +23,13 @@ Data Preprocessing and EDA
 
 There were no missing values. Below is the distribution of the target classes. From the visual it appears that most of the data that came across the network were allowable internet traffic. The t-SNE diagram shows the clustering and relationship between the different classes.
 
+<img width="266" alt="image" src="https://github.com/user-attachments/assets/4752e3bf-889e-40ec-bd56-cb07cecef301" />
+
   
 Diagram 1: Distribution of Classes
 
- 
+ <img width="431" alt="image" src="https://github.com/user-attachments/assets/e1daa29e-095c-4bb1-9bd8-4ab88f7f3a91" />
+
 Diagram 2: Dimensionality and Clustering of the different Classes
 To see if there were any relationships between the 11 features a correlation map was constructed. There appears to be a strong correlation between the ‘Bytes’ and ‘Packets’ features.  
 
