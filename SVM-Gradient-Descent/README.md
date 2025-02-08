@@ -27,11 +27,12 @@ The data used is from a Firewall Device used at Firat University. System adminis
 Table 1: Features and Descriptions
 
 
-Action	Description
-Allow	Allows the internet traffic.
-Deny	Blocks traffic and enforces the default Deny Action defined for the application that is being denied.
-Drop	Silently drops the traffic for an application, overrides the default deny action. A TCP reset is not sent to the host/application. 
-Reset-Both	Sends a TCP reset to both the client-side and server-side devices.
+| Action | Description |
+| ------ | ----------- |
+| Allow | Allows the internet traffic. |
+| Deny | Blocks traffic and enforces the default Deny Action defined for the application that is being denied. |
+| Drop | Silently drops the traffic for an application, overrides the default deny action. A TCP reset is not sent to the host/application. |
+| Reset-Both | Sends a TCP reset to both the client-side and server-side devices. |
 
 
 
@@ -59,14 +60,14 @@ Feature Selection
 
 Our log file data was split into a training and test set, with 80% trained and 20% test before applying logistic regression + Elastic Net regularization. Elastic Net regularization uses a combination of L1 (Lasso) and L2 (Ridge) penalties to determine the most important features. It was determined that 5 of the 11 features were most important. 
 
-	Most Important Feature
-1	Source Port
-2	Destination Port
-3	NAT Source Port
-4	NAT Destination Port
-5	Elapsed Time
+|	| Most Important Feature |
+| ----- | ---------------------- |
+| 1 | Source Port |
+| 2 | Destination Port |
+| 3 | NAT Source Port |
+| 4 | NAT Destination Port |
+| 5 | Elapsed Time |
  	 
-
 
 
 Model – Building
@@ -81,24 +82,13 @@ The SVM Linear and SVM RBF classifiers both performed about the same. They both 
 
 *See Confusion Matrices and AUC-ROC Curves for each model below.
 
-Method	Accuracy	Recall	Precision	F1 Score
-SVM Linear	99%	74%	74%	74%
-SVM RBF	99%	74%	74%	74%
-SVM Polynomial	98%	74%	73%	73%
-SVM Sigmoid	83%	61%	61%	61%
-SGD	98%	73%	73%	73%
-
-
-
-
-
-
-
-
-
-
-
-
+| Method |	Accuracy |	Recall |	Precision |	F1 Score |
+| ------ | ------------- | ----------- | ---------------- | ------------ |
+| SVM Linear |	99% |	74% |	74% |	74% |
+| SVM RBF |	99% |	74% |	74% |	74% |
+| SVM Polynomial |	98% |	74% |	73% |	73% |
+| SVM Sigmoid |	83% |	61% |	61% |	61% |
+| SGD |	98% |	73% |	73% |	73% |
 
 
 
@@ -149,6 +139,7 @@ Confusion Matrix:
  [   3    3    0    0]]
 
 <img width="205" alt="image" src="https://github.com/user-attachments/assets/56a591a8-3daf-48f7-a6aa-3932d50c4b6e" /> <img width="224" alt="image" src="https://github.com/user-attachments/assets/5a17ea2d-619f-405f-b805-b997650a2154" />
+
 
        
 SGD Confusion Matrix and AUC-ROC Curve
