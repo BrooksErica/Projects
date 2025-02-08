@@ -56,8 +56,8 @@ The Naïve Bayes classifier achieved an accuracy of 98%. It was able to correctl
 Accuracy: 0.980224478888295  
 Classification Report:
 
- | Precision | Recall | f1-score | support |
- | --------- | ------ | -------- | ------- |
+ | | Precision | Recall | f1-score | support |
+ | | --------- | ------ | -------- | ------- |
 | 0 | 0.98 | 1.00 | 0.99 | 1385 |
 | 1 | 0.99 | 0.93 | 0.96 | 486 |
 |                                          |
@@ -68,8 +68,7 @@ Classification Report:
 
 
 
-| Confusion Matrix |
-| ---------------- |
+Confusion Matrix:
 | [[ 453 |  33] | 
 | [   4 | 1381]] |
 
