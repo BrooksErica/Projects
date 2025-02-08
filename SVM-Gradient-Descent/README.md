@@ -9,7 +9,23 @@ In this case study, the goal is to classify firewall log files using a multiclas
 Method
 
 The data used is from a Firewall Device used at Firat University. System administrator’s set-up a set of security policies based on the organization’s needs. The sample data consists of a collection of 65532 firewall log files examined over 12 different features which include the target feature ‘Action.’  The Action feature is the column of classes that we are trying to predict.
-	
+
+| Feature | Description |
+| ------- | ----------- |
+| Source Port |	Client Source Port |
+| Destination Port | Client Destination Port|
+| NAT Source Port | Network Address Translation Source Port|
+| NAT Destination Port | Network Address Translation Destination Port|
+| Bytes	Total | Bytes |
+| Bytes Sent | Bytes Sent |
+| Bytes Received | Bytes Received |
+| Packets | Total Packets |
+| Elapsed Time | Elapsed Time for flow |
+| pkts_sent | Packets Sent |
+| pkts_received | Packets Received |
+| Action | Class (allow, deny, drop, reset-both) |
+Table 1: Features and Descriptions
+
 
 Action	Description
 Allow	Allows the internet traffic.
@@ -35,6 +51,7 @@ Diagram 2: Dimensionality and Clustering of the different Classes
 To see if there were any relationships between the 11 features a correlation map was constructed. There appears to be a strong correlation between the ‘Bytes’ and ‘Packets’ features.  
 
  <img width="338" alt="image" src="https://github.com/user-attachments/assets/4cc60750-c782-4209-99b2-8cf7c6453e19" />
+
 
 
 
@@ -106,8 +123,10 @@ Confusion Matrix:
  [   0    0 2562    0]
  [   3    3    0    0]]
 
-         
+<img width="206" alt="image" src="https://github.com/user-attachments/assets/838d8923-29ad-4027-8f6f-1ce889952a74" /> <img width="225" alt="image" src="https://github.com/user-attachments/assets/26e82f27-9abe-483d-b7de-6f93396a4322" />
 
+
+         
 SVM Polynomial Confusion Matrix and AUC-ROC Curve
 
 Confusion Matrix:
@@ -116,8 +135,10 @@ Confusion Matrix:
  [   0    0 2562    0]
  [   3    3    0    0]]
 
-       
+<img width="205" alt="image" src="https://github.com/user-attachments/assets/de603aee-b3d1-448c-b976-51305a82bfa4" /> <img width="220" alt="image" src="https://github.com/user-attachments/assets/3652d609-28ad-47a4-8217-acd99f8d5ad2" />
 
+
+       
 
 SVM Sigmoid Confusion Matrix and AUC-ROC Curve
 
@@ -127,6 +148,8 @@ Confusion Matrix:
  [ 525    0 2037    0]
  [   3    3    0    0]]
 
+<img width="205" alt="image" src="https://github.com/user-attachments/assets/56a591a8-3daf-48f7-a6aa-3932d50c4b6e" /> <img width="224" alt="image" src="https://github.com/user-attachments/assets/5a17ea2d-619f-405f-b805-b997650a2154" />
+
        
 SGD Confusion Matrix and AUC-ROC Curve
 
@@ -135,3 +158,7 @@ Confusion Matrix:
  [  36 2789  169    0]
  [   0    0 2562    0]
  [   3    3    0    0]]
+
+ <img width="212" alt="image" src="https://github.com/user-attachments/assets/29d49e37-3534-49d8-8a0e-0063f5b859c5" /> <img width="232" alt="image" src="https://github.com/user-attachments/assets/6f44ec9f-17ab-4fa1-a33b-22edb3520f35" />
+
+
