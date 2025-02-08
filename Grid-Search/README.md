@@ -1,16 +1,16 @@
-Hyperparameter Tuning and Model Evaluation using Cross-Validation  
+###Hyperparameter Tuning and Model Evaluation using Cross-Validation  
 
-Overview   
+##Overview   
 
 This project implements hyperparameter tuning and model evaluation using cross-validation on multiple classifiers. The models tested include:  
 •	Random Forest Classifier  
 •	Logistic Regression   
 •	Support Vector Classifier (SVC)   
 
-Dataset  
+#Dataset  
 The dataset used in this project is the Wine Quality Dataset, specifically winequality-white.csv, which contains various chemical attributes of white wine samples along with their quality ratings.  
 
-Data Preprocessing   
+#Data Preprocessing   
 •	The dataset is loaded using numpy.genfromtxt().  
 •	Features (M) and labels (L) are extracted from the dataset.  
 •	Labels represent wine quality scores.  
@@ -32,7 +32,7 @@ Support Vector Classifier (SVC)
 •	C: [1.0, 0.01, 0.1]
 •	kernel: ['rbf', 'poly', 'sigmoid']
 
-Functionality  
+#Functionality  
 1. gen_clf_models() Function  
 •	Iterates through classifiers and their hyperparameters.  
 •	Performs K-Fold Cross-Validation to evaluate each model.   
