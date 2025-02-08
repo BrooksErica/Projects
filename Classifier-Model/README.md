@@ -53,14 +53,15 @@ Results
 
 The Naïve Bayes classifier achieved an accuracy of 98%. It was able to correctly classify 98 out of 100 emails. According to the confusion matrix 1381 emails was accurately identified as not-spam (ham) while 4 was incorrectly identified as spam. Similarly, 453 were accurately identified as spam while 33 were incorrectly identified as not-spam (ham). 
 
-Accuracy: 0.980224478888295
+Accuracy: 0.980224478888295  
 Classification Report:
 
  | Precision | Recall | f1-score | support |
  | --------- | ------ | -------- | ------- |
 | 0 | 0.98 | 1.00 | 0.99 | 1385 |
 | 1 | 0.99 | 0.93 | 0.96 | 486 |
-| accuracy  |     | 0.98 | 1871 |
+| -----------------------------------------|
+| accuracy    |  0.98 | 1871 |
 | micro avg. | 0.98 | 0.96 | 0.97 | 1871 |
 | weighted avg. | 0.98 | 0.98 | 0.98 | 1871 |
 
