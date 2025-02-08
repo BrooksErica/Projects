@@ -31,9 +31,11 @@ Diagram 1: Distribution of Classes
  <img width="431" alt="image" src="https://github.com/user-attachments/assets/e1daa29e-095c-4bb1-9bd8-4ab88f7f3a91" />
 
 Diagram 2: Dimensionality and Clustering of the different Classes
+
 To see if there were any relationships between the 11 features a correlation map was constructed. There appears to be a strong correlation between the ‘Bytes’ and ‘Packets’ features.  
 
- 
+ <img width="338" alt="image" src="https://github.com/user-attachments/assets/4cc60750-c782-4209-99b2-8cf7c6453e19" />
+
 
 
 Feature Selection
@@ -92,9 +94,10 @@ Confusion Matrix:
  [   0    0 2562    0]
  [   3    3    0    0]]
 
+<img width="199" alt="image" src="https://github.com/user-attachments/assets/11112968-5738-44f2-96e1-eb35f07c229f" />  <img width="216" alt="image" src="https://github.com/user-attachments/assets/628e855b-84c4-4516-aad0-a6c37e0f5463" />
+
+
           
-
-
 SVM RBF Confusion Matrix and AUC-ROC Curve
 
 Confusion Matrix:
