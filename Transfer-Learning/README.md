@@ -1,11 +1,11 @@
-#Character Recognition using Transfer Learning on CNN
+# Character Recognition using Transfer Learning on CNN
 
-##Overview
+## Overview
 
 This project implements a convolutional neural network (CNN) to recognize handwritten characters (A-E) using transfer learning. The model is initially trained on my own handwritten MNIST dataset and then fine-tuned on a custom dataset I created containing characters A, B, C, D, and E. The goal is to leverage knowledge from digit classification to improve character recognition performance.  
 
 
-###Dataset
+### Dataset
 
 1. MNIST Dataset
 
@@ -21,7 +21,7 @@ Images are loaded in grayscale and resized to 28x28 pixels to match the MNIST fo
 
 
 
-###Model Architecture
+### Model Architecture
 
 The model is a Convolutional Neural Network (CNN) with the following structure:
 
@@ -39,7 +39,7 @@ Fully Connected Layer 2: Output layer with 10 neurons (for MNIST) initially, lat
 
 
 
-###Process
+### Process
 
 1. Data Preprocessing
 
@@ -73,7 +73,7 @@ Model predictions on character images are visualized after fine-tuning.
 
 
 
-###Results
+### Results
 
 The model successfully learns to recognize characters A-E after transfer learning.
 
