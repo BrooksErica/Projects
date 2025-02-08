@@ -8,12 +8,13 @@ Method
 
 The data used is from the Apache SpamAssassin open-source project. System administrators use a filtering system to classify wanted email and unsolicited email. The sample data consists of a collection of email text contained in five folders. Three of the folders are ‘ham’ (not spam or wanted emails) and two of the folders are ‘spam.’ 
 
-Directory/Folders	Description
-hard_ham	Not spam
-easy_ham	Not spam
-easy_ham_2	Not spam
-spam	Spam
-Spam_2	Spam
+| Directory/Folders |	Description |
+| ----------------- | ----------- |
+| hard_ham |	Not spam |
+| easy_ham |	Not spam |
+| easy_ham_2 |	Not spam |
+| spam |	Spam |
+| Spam_2 |	Spam |
 
 Functions
 
@@ -29,9 +30,17 @@ Two functions were created, one to handle loading the emails for analysis and th
 
 The emails were loaded and preprocessed for an overall total of 9353 email text. 2399 (25.6%) are labeled as spam and 6954 (74.4%) are labeled as not spam.  
 
+<img width="242" alt="image" src="https://github.com/user-attachments/assets/f1dc57aa-81ca-4d80-ac94-48f923268004" />
+
+
+
 CountVectorizer was used as a feature extraction. The email text data was transformed into a matrix of counts (‘bag-of-words”) or numerical representation to be used for modeling.  
 
 To visualize the features and see the clustering or shape of data a DBSCAN was performed. In the clustering graph below we can see that the emails labeled as spam are classified by the brown color and the emails labeled as not-spam are classified by the blue color.
+
+
+<img width="282" alt="image" src="https://github.com/user-attachments/assets/79e64598-fe92-4a40-b6b6-d80c274ce436" />
+
 
  
 
@@ -59,3 +68,8 @@ weighted avg       0.98      0.98      0.98      1871
 Confusion Matrix:
  [[ 453   33]
  [   4 1381]]
+
+<img width="292" alt="image" src="https://github.com/user-attachments/assets/0103a891-69af-44d5-8a0c-6210fee00f15" />
+
+
+
