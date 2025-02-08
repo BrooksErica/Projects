@@ -23,20 +23,24 @@ Implemented a custom data class to handle the data. Created a training loop with
 
 The training loop function uses the following parameters:
 
-Parameters	Description
-Model	Neural Network model to train
-Train_loader	Dataloader containing the training data
-Val_loader	Dataloader containing the validation data
-Criterion	Loss function: in our case with chose the  Binary Cross Entropy
-Optimizer	In our case the Adam optimizer for adaptive learning rates
-Device	Run computations on CPU or GPU
- Num_Epochs	Number of training Epochs; in our case 100 Epochs
-Patience	Number of Epochs to wait before early stopping (10)
+| Parameters |	Description |
+| ---------- | ----------- |
+| Model |	Neural Network model to train |
+| Train_loader	Dataloader | containing the training data |
+| Val_loader	Dataloader | containing the validation data |
+| Criterion |	Loss function: in our case with chose the  Binary Cross Entropy |
+| Optimizer |	In our case the Adam optimizer for adaptive learning rates |
+| Device |	Run computations on CPU or GPU |
+| Num_Epochs |	Number of training Epochs; in our case 100 Epochs |
+| Patience |	Number of Epochs to wait before early stopping (10) |
 
 
 Results
 
 Our early stopping was triggered at 57 Epochs. There was no improvement afterwards. The validation loss was about 88% (0.8841). Model evaluation had a final test accuracy of 88% (0.8839) as well. 
+
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/43f63915-f7e4-407f-94bc-dbfcd00b611c" />
+
 
 
 Epoch [1/100], Train Loss: 0.2964, Val Loss: 0.2758, Train Acc: 2.5904, Val Acc: 0.8750
