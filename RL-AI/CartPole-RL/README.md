@@ -23,6 +23,6 @@ Moderate learning curve.
 Reward plateaued below 200 without tuning.
 Fluctuations in loss observed.
 
-<img src="https://github.com/user-attachments/assets/a68a26a5-450d-40dc-a421-ca9374d74609" />
+<img width="242" alt="image" src="https://github.com/user-attachments/assets/a68a26a5-450d-40dc-a421-ca9374d74609" />
 
 
