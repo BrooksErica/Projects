@@ -64,6 +64,8 @@ Achieve an average reward >200 over the last 50 episodes.
 
 
 
+***License: This project is licensed under the MIT License.***
+
 
 
 
