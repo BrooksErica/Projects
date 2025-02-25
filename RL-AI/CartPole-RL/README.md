@@ -52,7 +52,7 @@ Improved reward stability.
 Higher convergence rate.
 Reached success criterion (>200) in most trials.
 
-<img width="320" alt="image" src="https://github.com/user-attachments/assets/180ba6f4-0b1e-4d6b-9cff-0f7c1a50a10e" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/180ba6f4-0b1e-4d6b-9cff-0f7c1a50a10e" />
 
 
 
