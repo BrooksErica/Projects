@@ -54,6 +54,16 @@ Reached success criterion (>200) in most trials.
 
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/180ba6f4-0b1e-4d6b-9cff-0f7c1a50a10e" />
 
+2. Results
+
+
+| Method | Average Reward (Last 50 Episodes) | Convergence Speed | Stability | 
+| ------ | --------------------------------- | ----------------- | --------- | 
+| Baseline DQN | -150 | Moderate | Fluctuating |
+| Reward Shaping | -190 | Faster | Smoother |
+| Hyperparameter Tuning | -220 | Fastest | More Stable |
+
+
 
 
 
